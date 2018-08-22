@@ -5,11 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    bannerImage: [],
-    dataList:[],
-    pageName: ["首页","购物车","我的"],
-    footIndex:1,
-  
+    footIndex: 3,
+
   },
 
   /**
@@ -18,9 +15,9 @@ Page({
   onLoad: function (options) {
     wx.request({
       url: "https://api.it120.cc/xiaoxiameijia/banner/list",
-      success:res=>{
+      success: res => {
         this.setData({
-          bannerImage:res.data.data
+          bannerImage: res.data.data
         })
       }
     })
@@ -33,64 +30,64 @@ Page({
         })
       }
     })
-  
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+
   },
-  menuClick(e){
+  menuClick(e) {
     this.setData({
       footIndex: e.target.dataset.num
     })
-    if (e.target.dataset.num == 1){
+    if (e.target.dataset.num == 1) {
       wx.navigateTo({
-        url: 'index',
+        url: '../home/index',
       })
     }
     if (e.target.dataset.num == 2) {
@@ -100,7 +97,7 @@ Page({
     }
     if (e.target.dataset.num == 3) {
       wx.navigateTo({
-        url: '../me/index',
+        url: 'index',
       })
     }
   }

@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents": {
+    "homePage": "../component/index"
+  }
+}
