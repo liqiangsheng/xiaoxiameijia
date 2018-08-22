@@ -6,16 +6,30 @@
 }
 
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+  width: 128px;
+  height: 128px;
+  margin: 20px;
   border-radius: 50%;
 }
 
 .userinfo-nickname {
   color: #aaa;
 }
-
-.usermotto {
-  margin-top: 200px;
+#loginBox{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px;
+  box-sizing: border-box; 
+}
+#loginBox button{
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  background: #23A1FE;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+#loginBox button:nth-child(2){
+  background: #8DEEEE;
 }

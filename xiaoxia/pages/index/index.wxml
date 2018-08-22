@@ -7,7 +7,8 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view id='loginBox'>
+     <button bindtap='loginClick'>登录</button>
+     <button bindtap='registerClick' disabled="{{isDised}}">注册</button>
   </view>
 </view>

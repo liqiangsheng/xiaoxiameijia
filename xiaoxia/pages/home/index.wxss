@@ -1,0 +1,107 @@
+/* pages/home/index.wxss */
+.bannerBox{
+  width: 100%;
+  overflow: hidden;
+}
+.bannerBox block{
+  width: 100%;
+  display: block;
+}
+.swiper-item{
+  width: 100%;
+}
+.swiper-item image{
+  display: inline-block;
+  width: 100%;
+}
+.listBox{
+  width: 100%;
+  margin-top: 10px;
+  background: #fff;
+  padding: 0 3%;
+}
+.listBox .listBoxList{
+  width: 46%;
+  height: 268px;
+  margin-right: 1%;
+  float: left;
+  position: relative;
+}
+.listBox .listBoxList image{
+  display: inline-block;
+  height: 136px;
+  width: 100%;
+}
+.listBox .listBoxList .pruductName{
+  width: 100%;
+  font-size: 14px;
+  display: block;
+  line-height: 20px;
+  color: #C7C7C7;
+}
+.listBox .listBoxList .pruductName text{
+  font-size: 16px;
+  color: #393939;
+}
+.listBox .listBoxList .remarks{
+  width: 100%;
+  font-size: 14px;
+  display: block;
+  line-height: 20px;
+  color: #C7C7C7;
+}
+.listBox .listBoxList .remarks text{
+  font-size:  16px;
+  color: #393939;
+}
+.listBox .listBoxList .originalPrice{
+  width: 100%;
+  font-size:  16px;
+  display: block;
+  line-height: 20px;
+  color: #C7C7C7;
+  position: relative
+}
+.listBox .listBoxList .originalPrice text{
+  font-size:  16px;
+  color: #393939;
+}
+.listBox .listBoxList .originalPrice .xian{
+  display: block;
+ position: absolute;
+ width: 55%;
+ height: 2px;
+ background: #555555;
+ top: 46%;
+ left: 0;
+}
+.listBox .listBoxList .minPricePrice{
+  width: 100%;
+  font-size: 14px;
+  display: block;
+  line-height: 20px;
+  color: #C7C7C7;
+}
+.listBox .listBoxList .minPricePrice text{
+  font-size:  16px;
+  color: #393939;
+}
+.listBox .listBoxList .pingtuanPrice{
+  width: 100%;
+  font-size: 14px;
+  display: block;
+  line-height: 20px;
+  color: #C7C7C7;
+}
+.listBox .listBoxList .pingtuanPrice text{
+  font-size: 16px;
+  color: #393939;
+}
+.listBox .listBoxList .purchase{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  font-size: 13px;
+}
+
