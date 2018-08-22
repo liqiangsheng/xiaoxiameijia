@@ -1,5 +1,9 @@
 <!--pages/buy/index.wxml-->
-<view class='container'> 
+<view class='container'>
+   <view class='header'>
+       <view class='headerbox'><image src='{{userInfo.avatarUrl}}'></image></view>
+       <view class='headerbox1'><text>用户名：</text>{{userInfo.nickName}}</view>
+   </view> 
   
    <view class='footTab'>
         <view><text bindtap='menuClick' data-num='1' class='{{footIndex==1?"active":""}}'>首页</text></view>

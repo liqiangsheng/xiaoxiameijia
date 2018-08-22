@@ -6,6 +6,7 @@ Page({
    */
   data: {
     footIndex: 3,
+    userInfo:{},
 
   },
 
@@ -13,22 +14,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url: "https://api.it120.cc/xiaoxiameijia/banner/list",
-      success: res => {
+    wx.getUserInfo({
+      success:res=>{
+        console.log(res.userInfo,"dsfjkdsjkfs")
         this.setData({
-          bannerImage: res.data.data
+          userInfo: res.userInfo
         })
+        console.log(this.userInfo,"dasdas")
       }
-    })
-    wx.request({
-      url: "https://api.it120.cc/xiaoxiameijia/shop/goods/list",
-      success: res => {
-        console.log(res);
-        this.setData({
-          dataList: res.data.data
-        })
-      }
+         
     })
 
   },

@@ -1,8 +1,9 @@
 {
   "pages":[
+    "pages/me/index",
     "pages/buy/index",
     "pages/home/index",
-    "pages/me/index",
+   
     "pages/index/index",
     "pages/logs/logs"
   ],

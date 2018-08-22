@@ -1,4 +1,27 @@
 /* pages/buy/index.wxss */
+.header{
+  width: 100%;
+}
+.header .headerbox{
+  width: 100%;
+}
+.header .headerbox image{
+  width: 100%;
+  display: inline-block;
+}
+.header .headerbox1{
+  width: 100%;
+  padding: 0 10px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #EE7AE9;
+}
+.header .headerbox1 text{
+  width: 100%;
+  line-height: 42px;
+  font-size: 18px;
+  color: #212121;
+}
 
 .footTab{
   width: 100%;
