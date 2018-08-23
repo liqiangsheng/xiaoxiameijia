@@ -1,0 +1,12 @@
+<!--pages/detail/index.wxml-->
+<view class='detailBox'>
+   <image src='{{detailData.pic}}'></image>
+   <view class='priceAll'>
+      <text class='pruductName'>产品名称：<text> {{detailData.name}}</text></text>
+      <text class='remarks'>产品详情：<text> {{detailData.characteristic}}</text></text>
+      <text class='originalPrice'>原价：<text> ￥{{detailData.originalPrice}}</text><text class='xian'></text></text>
+      <text class='minPricePrice'>优惠价：<text> ￥{{detailData.minPrice}}</text></text>
+      <text class='pingtuanPrice'>团购价：<text> ￥{{detailData.pingtuanPrice}}</text></text>
+    </view>
+    <view class='purchase' data-shoppingdetail='{{detailData}}' bindtap='addBuy'>加入购物车</view>
+</view>

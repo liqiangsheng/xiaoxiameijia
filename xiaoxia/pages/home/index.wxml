@@ -1,32 +1,14 @@
-<!--pages/home/index.wxml首页-->
-<view class='container'> 
-    <scroll-view scroll-y id='box'>
-        <swiper indicator-dots="true" autoplay="true" interval="3000" circular="true" class="bannerBox">
-            <block wx:for="{{bannerImage}}" wx:key="index">
-                  <swiper-item class='swiper-item'>
-                      <image src='{{item.picUrl}}'/> 
-                      <!-- <image src='../../image/banner1.png'/> -->
-                  </swiper-item>
-            </block>
-        
-        </swiper>
-        <view class='listBox'>
-            <view wx:for='{{dataList}}' wx:key="index" class='listBoxList'>
-                  <image src="{{item.pic}}"></image>
-                  <text class='pruductName'>产品名称：<text> {{item.name}}元</text></text>
-                  <text class='remarks'>产品详情：<text> {{item.characteristic}}元</text></text>
-                  <text class='originalPrice'>原价：<text> {{item.originalPrice}}元</text><text class='xian'></text></text>
-                  <text class='minPricePrice'>优惠价：<text> {{item.minPrice}}元</text></text>
-                  <text class='pingtuanPrice'>团购价：<text> {{item.pingtuanPrice}}元</text></text>
-                  <button class='purchase'>购买</button>
-            </view>
-
-        </view>
-        <!-- <homePage></homePage> -->
-    </scroll-view>
-   <view class='footTab'>
-        <view><text bindtap='menuClick' data-num='1' class='{{footIndex==1?"active":""}}'>首页</text></view>
-        <view><text bindtap='menuClick' data-num='2' class='{{footIndex==2?"active":""}}'>购物车</text></view>
-        <view><text bindtap='menuClick' data-num='3' class='{{footIndex==3?"active":""}}'>我的</text></view>
-   </view>
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view id='loginBox'>
+     <button bindtap='loginClick'>登录</button>
+     <button bindtap='registerClick' disabled="{{isDised}}">注册</button>
+  </view>
 </view>

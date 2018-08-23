@@ -1,0 +1,93 @@
+/* pages/detail/index.wxss */
+.detailBox{
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.detailBox image{
+  width: 100%;
+  display: block;
+}
+.detailBox .priceAll{
+  width: 100%;
+}
+.detailBox .priceAll .pruductName{
+  width: 100%;
+  font-size: 18px;
+  display: block;
+  line-height: 30px;
+  color: #C7C7C7;
+}
+.detailBox .priceAll .pruductName text{
+  font-size: 16px;
+  color: #4D4D4D;
+}
+.detailBox .priceAll .remarks{
+  width: 100%;
+  font-size: 18px;
+  display: block;
+  line-height: 30px;
+  color: #C7C7C7;
+}
+.detailBox .priceAll .remarks text{
+  font-size: 16px;
+  color: #4D4D4D;
+}
+.detailBox .priceAll .originalPrice{
+  width: 100%;
+  font-size:  18px;
+  display: block;
+  line-height: 30px;
+  color: #C7C7C7;
+  position: relative
+}
+.detailBox .priceAll .originalPrice text{
+   font-size: 16px;
+  color: #B0B0B0;
+}
+.detailBox .priceAll .originalPrice .xian{
+  display: block;
+ position: absolute;
+ width: 30%;
+ height: 2px;
+ background:#CDC5BF;
+ top: 46%;
+ left: 0;
+}
+.ldetailBox .priceAll .minPricePrice{
+  width: 100%;
+  font-size: 18px;
+  display: block;
+  line-height: 30px;
+  color: #C7C7C7;
+}
+.detailBox .priceAll .minPricePrice text{
+  font-size: 16px;
+  color: #4D4D4D;
+}
+.detailBox .priceAll .pingtuanPrice{
+  width: 100%;
+  font-size: 18px;
+  display: block;
+  line-height: 30px;
+  color: #C7C7C7;
+}
+.detailBox .priceAll .pingtuanPrice text{
+   font-size: 16px;
+  color: #4D4D4D;
+}
+.detailBox .purchase{
+  position: absolute;
+  left: 5%;
+  bottom: 50px;
+  width: 90%;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 4px;
+  font-size: 13px;
+  background: #EE7AE9;
+  color: #fff;
+}

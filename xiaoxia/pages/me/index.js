@@ -16,7 +16,6 @@ Page({
   onLoad: function (options) {
     wx.getUserInfo({
       success:res=>{
-        console.log(res.userInfo,"dsfjkdsjkfs")
         this.setData({
           userInfo: res.userInfo
         })
@@ -75,24 +74,11 @@ Page({
   onShareAppMessage: function () {
 
   },
-  menuClick(e) {
-    this.setData({
-      footIndex: e.target.dataset.num
+  telClick(){
+    //拨打电话
+    wx.makePhoneCall({
+      phoneNumber: '15220064409' 
     })
-    if (e.target.dataset.num == 1) {
-      wx.navigateTo({
-        url: '../home/index',
-      })
-    }
-    if (e.target.dataset.num == 2) {
-      wx.navigateTo({
-        url: '../buy/index',
-      })
-    }
-    if (e.target.dataset.num == 3) {
-      wx.navigateTo({
-        url: 'index',
-      })
-    }
   }
+ 
 })

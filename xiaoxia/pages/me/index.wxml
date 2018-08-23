@@ -4,10 +4,7 @@
        <view class='headerbox'><image src='{{userInfo.avatarUrl}}'></image></view>
        <view class='headerbox1'><text>用户名：</text>{{userInfo.nickName}}</view>
    </view> 
-  
-   <view class='footTab'>
-        <view><text bindtap='menuClick' data-num='1' class='{{footIndex==1?"active":""}}'>首页</text></view>
-        <view><text bindtap='menuClick' data-num='2' class='{{footIndex==2?"active":""}}'>购物车</text></view>
-        <view><text bindtap='menuClick' data-num='3' class='{{footIndex==3?"active":""}}'>我的</text></view>
+   <view class='tel' bindtap='telClick'>
+    如有任何疑问，请点击拨打小夏电话
    </view>
 </view>

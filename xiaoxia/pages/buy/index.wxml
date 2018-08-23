@@ -1,9 +1,23 @@
 <!--pages/buy/index.wxml-->
-<view class='container'> 
-  
-   <view class='footTab'>
-        <view><text bindtap='menuClick' data-num='1' class='{{footIndex==1?"active":""}}'>首页</text></view>
-        <view><text bindtap='menuClick' data-num='2' class='{{footIndex==2?"active":""}}'>购物车</text></view>
-        <view><text bindtap='menuClick' data-num='3' class='{{footIndex==3?"active":""}}'>我的</text></view>
-   </view>
+<!-- <view class='container'> -->
+  <view class='header' wx:if="{{detail.length<=0}}" >
+        您还没购买服务请先选择服务
+  </view>   
+ 
+<view class='buyBox'wx:if="{{detail.length>0}}">
+  <view wx:for="{{detail}}" wx:key="{{index}}" class='buyList'>
+        <image src="{{item.pic}}"></image> 
+       <view class='buyName'>
+         <view>产品名字:<text>{{item.name}}</text></view>
+         <view>应付优惠价格:<text>￥{{item.minPrice}}</text></view>
+         <view>应付团购价格:<text>￥{{item.pingtuanPrice}}</text></view>
+      </view>
+     
+       
+  </view> 
 </view>
+  <view class='foot' wx:if="{{detail.length>0}}">
+         <view>应付优惠总价格:<text>￥{{item.minPrice}}</text></view>
+         <view>应付团购总价格:<text>￥{{item.pingtuanPrice}}</text></view>
+  </view>  
+<!-- </view> -->

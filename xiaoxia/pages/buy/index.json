@@ -1,1 +1,6 @@
-{}
+{
+  "navigationBarBackgroundColor": "#FFF0F5",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "购物详情",
+  "backgroundTextStyle": "light"
+}
