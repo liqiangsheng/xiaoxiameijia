@@ -1,23 +1,24 @@
 <!--pages/buy/index.wxml-->
 <!-- <view class='container'> -->
-  <view class='header' wx:if="{{detail.length<=0}}" >
+  <view class='header' wx:if="{{detail.length<=0}}" bindtap=''>
         您还没购买服务请先选择服务
   </view>   
  
-<view class='buyBox'wx:if="{{detail.length>0}}">
+<view class='buyBox' wx:if="{{detail.length>0}}">
   <view wx:for="{{detail}}" wx:key="{{index}}" class='buyList'>
         <image src="{{item.pic}}"></image> 
        <view class='buyName'>
          <view>产品名字:<text>{{item.name}}</text></view>
          <view>应付优惠价格:<text>￥{{item.minPrice}}</text></view>
          <view>应付团购价格:<text>￥{{item.pingtuanPrice}}</text></view>
+         <view class='del' data-index='{{index}}' bindtap='del'>删除</view>
       </view>
      
        
   </view> 
 </view>
   <view class='foot' wx:if="{{detail.length>0}}">
-         <view>应付优惠总价格:<text>￥{{item.minPrice}}</text></view>
-         <view>应付团购总价格:<text>￥{{item.pingtuanPrice}}</text></view>
+         <view>应付优惠总价格:<text>￥{{allPrice}}</text></view>
+         <view>应付团购总价格:<text>￥{{allPrice1}}</text></view>
   </view>  
 <!-- </view> -->

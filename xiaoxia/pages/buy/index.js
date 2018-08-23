@@ -6,17 +6,23 @@ Page({
    */
   data: {
    detail:[],
- 
+   allPrice:0,
+   allPrice1: 0,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-   this.setData({
-     detail:wx.getStorageSync("details")
-   })
-   console.log(wx.getStorageSync("details"))
+  //  this.setData({
+  //    detail:wx.getStorageSync("details")
+  //  })
+  //  this.data.detail.map((v,i)=>{
+  //    this.setData({
+  //      allPrice: this.data.allPrice += v.minPrice,
+  //      allPrice1: this.data.allPrice1 += v.pingtuanPrice,
+  //    })
+  //  })
    
   },
 
@@ -24,7 +30,8 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+   
+   
   },
 
   /**
@@ -33,6 +40,16 @@ Page({
   onShow: function () {
     this.setData({
       detail: wx.getStorageSync("details")
+    })
+    let a=0,b=0;
+    wx.getStorageSync("details").map((v, i) => {
+      a += v.minPrice;
+      b += v.minPrice;
+      this.setData({
+        allPrice: a,
+        allPrice1: b,
+      })
+     
     })
   },
 
@@ -76,5 +93,24 @@ Page({
       url: '../index/index'
     })
   },
+  del(e){
+    //删除
+    console.log(e)
+    let arr = wx.getStorageSync("details");
+    console.log(arr)
+    arr.map((v,i)=>{
+      if(e.currentTarget.dataset.index ===i){
+        arr.splice(i,1)
+        wx.setStorageSync("details", arr)
+        this.setData({
+          detail: arr,
+          allPrice: this.data.allPrice -= v.minPrice,
+          allPrice1: this.data.allPrice1 -= v.pingtuanPrice,
+
+        })
+           }
+    })
+   
+  }
   
 })
