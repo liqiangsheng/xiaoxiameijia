@@ -20,5 +20,18 @@
   <view class='foot' wx:if="{{detail.length>0}}">
          <view>应付优惠总价格:<text>￥{{allPrice}}</text></view>
          <view>应付团购总价格:<text>￥{{allPrice1}}</text></view>
+          <view>
+          
+          <radio-group class="radio-group" bindchange="radioChange">
+                 <text>是否团购</text> 
+                <label class="radio" wx:for="{{items}}" wx:key='{{index}}'>
+                  <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+                </label>
+            </radio-group>
+          </view> 
+          <view class='blur'>人数<input  id='blur type='number' value='{{peopleValue}}' maxlength="10" bindblur='people'/></view>
+          <view class='goPrice' bindtap='goPriceMoney'>
+             共需： <text>{{goPrice}}</text>
+          </view>
   </view>  
 <!-- </view> -->

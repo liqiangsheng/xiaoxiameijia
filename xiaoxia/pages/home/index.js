@@ -15,6 +15,7 @@ Page({
     wx.navigateTo({
       url: '../logs/logs'
     })
+   
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
@@ -71,7 +72,8 @@ Page({
 
         })
         wx.setStorageSync("token", res.data)
-        wx.navigateTo({
+      
+        wx.switchTab({
           url: '../index/index',
         })
       },

@@ -4,6 +4,9 @@
        <view class='headerbox'><image src='{{userInfo.avatarUrl}}'></image></view>
        <view class='headerbox1'><text>用户名：</text>{{userInfo.nickName}}</view>
    </view> 
+   <view class='tel1' bindtap='maptap'>
+    点击去小夏的店铺
+   </view>
    <view class='tel' bindtap='telClick'>
     如有任何疑问，请点击拨打小夏电话
    </view>
