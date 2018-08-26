@@ -16,9 +16,9 @@
                   <view class='priceAll'>
                     <text class='pruductName'>产品名称：<text> {{item.name}}</text></text>
                     <text class='remarks'>产品详情：<text> {{item.characteristic}}</text></text>
-                    <text class='originalPrice'>原价：<text> ￥{{item.originalPrice}}</text><text class='xian'></text></text>
+                    <!-- <text class='originalPrice'>原价：<text> ￥{{item.originalPrice}}</text><text class='xian'></text></text>
                     <text class='minPricePrice'>优惠价：<text> ￥{{item.minPrice}}</text></text>
-                    <text class='pingtuanPrice'>团购价：<text> ￥{{item.pingtuanPrice}}</text></text>
+                    <text class='pingtuanPrice'>团购价：<text> ￥{{item.pingtuanPrice}}</text></text> -->
                   </view>
                   <!-- <view class='purchase' data-shoppingDetail='{{item}}' bindtap="buy">加入购物车</view> -->
                   <view class='purchase' data-id='{{item.id}}' bindtap='lookDetail'>查看详情</view>

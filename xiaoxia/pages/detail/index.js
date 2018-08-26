@@ -90,5 +90,15 @@ Page({
       })
     },1000)
    
+  },
+  srcBig(event){
+    console.log(11111111)
+    console.log(event)
+    let arr = [], src = event.currentTarget.dataset.src;
+    arr.push(event.currentTarget.dataset.src);
+    wx.previewImage({
+      current: src, // 当前显示图片的http链接
+      urls: arr, // 需要预览的图片http链接列表
+    })
   }
 })

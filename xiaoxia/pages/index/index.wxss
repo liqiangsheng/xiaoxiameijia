@@ -23,12 +23,12 @@
 }
 .listBox .listBoxList{
   width: 100%;
-  height: 200px;
+  height: 100px;
   display: flex;
   position: relative;
 }
 .listBox .listBoxList image{
-  margin-top: 30px;
+  margin-top: 10px;
   display: inline-block;
   height: 60px;
   width: 60px;
@@ -107,7 +107,7 @@
 .listBox .listBoxList .purchase{
   position: absolute;
   right: 20px;
-  bottom: 50px;
+  bottom: 10px;
   width: 60px;
   height: 30px;
   text-align: center;
