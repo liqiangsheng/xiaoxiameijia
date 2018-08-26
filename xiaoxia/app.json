@@ -2,6 +2,7 @@
   "pages":[
     "pages/home/index",
     "pages/index/index",
+    "pages/meijie/index",
     "pages/me/index",
     "pages/buy/index",
     "pages/detail/index",
@@ -20,11 +21,11 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "列表"
+        "text": "美甲"
       },
       {
-        "pagePath": "pages/buy/index",
-        "text": "购物车"
+        "pagePath": "pages/meijie/index",
+        "text": "美睫"
       },
       {
         "pagePath": "pages/me/index",

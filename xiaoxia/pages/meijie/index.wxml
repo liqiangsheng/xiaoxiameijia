@@ -1,8 +1,8 @@
-<!--pages/home/index.wxml首页-->
+<!--pages/meijie/index.wxml-->
 <view class='container'> 
     <scroll-view scroll-y id='box'>
         <swiper indicator-dots="true" autoplay="true" interval="3000" circular="true" class="bannerBox">
-            <block wx:for="{{bannerImage}}" wx:key="index" wx:if="{{item.businessId===1}}">
+            <block wx:for="{{bannerImage}}" wx:key="index" wx:if="{{item.businessId===2}}">
                   <swiper-item class='swiper-item'>
                       <image src='{{item.picUrl}}'/> 
                       <!-- <image src='../../image/banner1.png'/> -->
@@ -11,7 +11,7 @@
         
         </swiper>
         <view class='listBox'>
-            <view wx:for='{{dataList}}' wx:key="index" class='listBoxList' wx:if="{{item.barCode==='001'}}">
+            <view wx:for='{{dataList}}' wx:key="index" class='listBoxList' wx:if="{{item.barCode==='002'}}">
                   <image src="{{item.pic}}" alt="点击查看详情"></image>
                   <view class='priceAll'>
                     <text class='pruductName'>产品名称：<text> {{item.name}}</text></text>
@@ -29,3 +29,4 @@
     </scroll-view>
    
 </view>
+

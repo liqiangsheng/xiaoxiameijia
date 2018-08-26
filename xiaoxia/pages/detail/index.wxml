@@ -8,5 +8,5 @@
       <text class='minPricePrice'>优惠价：<text> ￥{{detailData.minPrice}}</text></text>
       <text class='pingtuanPrice'>团购价：<text> ￥{{detailData.pingtuanPrice}}</text></text>
     </view>
-    <view class='purchase' data-shoppingdetail='{{detailData}}' bindtap='addBuy'>加入购物车</view>
+    <!-- <view class='purchase' data-shoppingdetail='{{detailData}}' bindtap='addBuy'>加入购物车</view> -->
 </view>
